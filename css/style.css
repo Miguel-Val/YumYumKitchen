@@ -1,8 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: white;
+    
 }
 
-.nav-links {
-    text-align: center;
+.nav-links, a, button {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+.nav-logo {
+    cursor: pointer;
+}
+
+.nav-link{
+    padding: 0px 20px;
+}
+
+.nav-links .nav-link a {
+    text-emphasis-color: rgba(rgb(0, 0, 0,1));
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover {
+    /* color: orange; */
+    text-emphasis-color: rgba(rgba(0, 0, 0, 0.164));
+    text-decoration: underline #FFA500;
+    text-decoration-thickness: 3px;
+    /* text-decoration-color: ; */
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(255,165,0,1);
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(255,165,0,0.8);
+}
+
+.dogimg {
+    filter: brightness(70%);
+    margin-left: 450px;
+    height: 500px;
+    width: 1100px;
 }
